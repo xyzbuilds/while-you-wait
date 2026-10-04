@@ -1,0 +1,32 @@
+{
+  "name": "while-you-wait",
+  "version": "0.1.0",
+  "description": "While Claude works, the side panel lists what you can do meanwhile on GitHub: pull requests waiting for your review (with the diff and a quick pre-review), your own pull requests that need you, issues assigned to you.",
+  "author": {
+    "name": "XYZ Makes"
+  },
+  "homepage": "https://github.com/xyzbuilds/while-you-wait",
+  "repository": "https://github.com/xyzbuilds/while-you-wait",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "nudgeAfterMinutes": {
+      "type": "number",
+      "title": "While you wait: minutes before the hint",
+      "description": "How long Claude works before the status line shows what you could do meanwhile",
+      "default": 2
+    },
+    "openPanel": {
+      "type": "boolean",
+      "title": "While you wait: open the side panel by itself",
+      "description": "Open the panel when the hint shows, not only on /wait",
+      "default": false
+    },
+    "onlyThisRepo": {
+      "type": "boolean",
+      "title": "While you wait: this repository only",
+      "description": "List only the pull requests and issues of the repository Claude is working in",
+      "default": false
+    }
+  }
+}
